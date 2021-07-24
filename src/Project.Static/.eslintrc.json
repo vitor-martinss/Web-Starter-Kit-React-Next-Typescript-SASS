@@ -1,0 +1,72 @@
+{
+	"env": {
+		"browser": true,
+		"node": true,
+		"es2020": true
+	},
+	"extends": [
+		"plugin:react/recommended",
+		"plugin:prettier/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"react",
+		"react-hooks",
+		"prettier",
+		"@typescript-eslint"
+	],
+	"rules": {
+		"indent": [
+			2,
+			"tab", {
+				"SwitchCase": 1
+			}
+		],
+		"quotes": [
+			2,
+			"single", {
+				"avoidEscape": true
+			}
+		],
+		"semi": [
+			1,
+			"never"
+		],
+		"react-hooks/rules-of-hooks": "error",
+		"react-hooks/exhaustive-deps": "warn",
+		"react/jsx-filename-extension": [1, {
+			"extensions": [".tsx"]
+		}],
+		"import/prefer-default-export": "off",
+		"lines-around-comment": 1,
+		"camelcase": "off",
+		"@typescript-eslint/ban-types": "off",
+		"no-use-before-define": "off",
+		"no-multiple-empty-lines": [1, {
+			"max": 2,
+			"maxBOF": 0,
+			"maxEOF": 0
+		}],
+		"no-redeclare": 2,
+		"no-var": 2,
+		"comma-dangle": [2, "never"],
+		"space-before-function-paren": "off",
+		"react/prop-types": "off",
+		"prettier/prettier": "error"
+	},
+
+	"settings": {
+		"import/resolver": {
+			"typescript": {}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+// abstract
+@import '@/styles/abstracts/_variables.scss';
+@import '@/styles/abstracts/_functions.scss';
+@import '@/styles/abstracts/_mixins.scss';
+@import '@/styles/abstracts/_placeholders.scss';
+@import '@/styles/abstracts/_placeholders-includes.scss';
+
+
+.header {
+	@include size(100%, 8rem);
+	background-color: $black;
+	color: green;
+	padding: 1rem 2rem 2rem 2rem;
+
+	a {
+		font-size: 5rem;
+		color: $white;
+		padding: 1rem;
+	}
+}

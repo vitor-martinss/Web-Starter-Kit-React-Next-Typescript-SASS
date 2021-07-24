@@ -1,0 +1,34 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/src/Project.Static/node_modules
+/src/Project.Static/.pnp
+/src/Project.Static/.pnp.js
+
+# testing
+/src/Project.Static/coverage
+
+# next.js
+/src/Project.Static/.next/
+/src/Project.Static/out/
+
+# production
+/src/Project.Static/build
+
+# misc
+/src/Project.Static/.DS_Store
+/src/Project.Static/*.pem
+
+# debug
+/src/Project.Static/npm-debug.log*
+/src/Project.Static/yarn-debug.log*
+/src/Project.Static/yarn-error.log*
+
+# local env files
+/src/Project.Static/.env.local
+/src/Project.Static/.env.development.local
+/src/Project.Static/.env.test.local
+/src/Project.Static/.env.production.local
+
+# vercel
+/src/Project.Static/.vercel

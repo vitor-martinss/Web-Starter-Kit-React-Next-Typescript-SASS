@@ -1,0 +1,21 @@
+// Do not set any root variable in order to work on IE browser
+// reset
+@import
+'base/reset';
+
+// abstract
+@import
+'abstracts/variables',
+'abstracts/functions',
+'abstracts/mixins',
+'abstracts/placeholders',
+'abstracts/placeholders-includes';
+
+// layout
+@import
+//fonts
+'layout/fonts',
+//useful classes
+'layout/utils',
+///general rules
+'layout/general';
