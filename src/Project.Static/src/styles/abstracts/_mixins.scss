@@ -23,22 +23,6 @@
 	@include position(absolute, $args);
 }
 
-@mixin fixed($args: '') {
-	@include position(fixed, $args);
-}
-
-@mixin relative($args: '') {
-	@include position(relative, $args);
-}
-
-@mixin static($args: '') {
-	@include position(static, $args);
-}
-
-@mixin sticky($args: '') {
-	@include position(sticky, $args);
-}
-
 @mixin bp($breakpoint, $type: min) {
 	$value: map-get($breakpoints, $breakpoint);
 
@@ -100,10 +84,6 @@
 	}
 }
 
-@mixin _($name) {
-	@extend %#{$name}-#{$current-breakpoint} !optional;
-}
-
 
 @mixin size($width, $height: $width) {
 	width: $width;
@@ -113,7 +93,6 @@
 @mixin z-index($key) {
 	z-index: z-index($key);
 }
-
 
 // transformations :: rotate, scale, translate
 @mixin transform($key...) {
@@ -125,12 +104,10 @@
 	@include transform(rotate(#{$key}deg));
 }
 
-
 // translate
 @mixin translate($x, $y) {
 	@include transform(translate($x, $y));
 }
-
 
 @mixin font-tracking($value) {
 	letter-spacing: math.div($value, 1000) + rem;
