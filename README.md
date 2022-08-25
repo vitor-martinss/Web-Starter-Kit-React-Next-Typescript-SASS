@@ -48,7 +48,7 @@ $ git clone https://github.com/vitor-martinss/Web-Starter-Kit-React-Next-Typescr
   $ yarn
 
   # Start project
-  yarn start
+  yarn dev
 ```
 The app will be available for access on your browser at `http://localhost:3000`
 
